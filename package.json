@@ -1,0 +1,35 @@
+{
+  "name": "todoapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "preinstall": "npm i grunt -g",
+    "start": "./node_modules/.bin/grunt nodemon",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha && codecov"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "grunt": "^1.0.3",
+    "grunt-env": "^0.4.4",
+    "grunt-environmental": "^0.1.5",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-simple-mocha": "^0.4.1",
+    "istanbul": "^0.4.5",
+    "method-override": "^3.0.0",
+    "mongoose": "^4.13.18",
+    "morgan": "^1.9.1",
+    "should": "^13.2.3"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "opbeat": "^4.17.0",
+    "sinon": "^7.2.3",
+    "sinon-mongoose": "^2.2.1"
+  }
+}
